@@ -22,7 +22,10 @@ angular.module('OWMApp', ['ngRoute'])
         })
         .when('/error', {
 		    template : '<p>Error Page Not Found</p>'
-		});
+		})
+        .otherwise({
+            redirectTo : '/error'
+        });
     })
     .run(function($rootScope, $location) {
         $rootScope.$on('$routeChangeStart', function() {
