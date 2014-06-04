@@ -1,0 +1,12 @@
+.loading {
+    position:relative;
+}
+.loading:before {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    z-index:1000;
+    background:rgba(100,100,100,0.5) url(./loading-animation.gif) no-repeat center center;
+}
