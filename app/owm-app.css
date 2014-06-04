@@ -6,7 +6,7 @@ body, html {
   padding-top:10px;
 }
 .loading {
-  position:absolute;
+  position:relative;
   height:100%;
 }
 .loading:before {
@@ -23,7 +23,6 @@ body, html {
 .animate-view-container { position:relative; min-height: 100%; }
 .animate-view.ng-enter,
 .animate-view.ng-leave {
-    padding-top:20px;
     transition:1s linear all;
     position:absolute;
     top:0;
@@ -31,13 +30,6 @@ body, html {
     right:0;
     bottom:0;
     background:#eee;
-}
-.view-nav {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:1000;
 }
 .animate-view.ng-enter { opacity:0; z-index:100; }
 .animate-view.ng-enter.ng-enter-active { opacity:1; }
